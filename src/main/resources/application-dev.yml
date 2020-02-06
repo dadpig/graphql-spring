@@ -1,0 +1,20 @@
+server:
+  port: ${port:8080}
+  servlet:
+    session:
+      timeout: 30s
+spring:
+  application:
+    name: graphql
+  profiles:
+    active: dev
+
+  data:
+    mongodb:
+      uri: ${mongodb.uri:mongodb://mongoadmin:a0_6fN@GNCASNDL01125:27017,GNCASNDL01126:27017/santander-integration-ms?authSource=admin&replicaSet=rsCredDigDev}
+
+        
+logging:
+  level:
+    root: INFO
+

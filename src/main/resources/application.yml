@@ -1,0 +1,20 @@
+server:
+  port: ${port:8080}
+  servlet:
+    session:
+      timeout: 30s
+spring:
+  application:
+    name: graphql-spring
+  profiles:
+    active: dev
+
+  data:
+    mongodb:
+      uri: localhost:27017/books-collection?authSource=admin
+
+        
+logging:
+  level:
+    root: INFO
+
