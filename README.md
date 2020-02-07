@@ -2,7 +2,7 @@
 Sample springboot app to test graphql with java.
 
 
-test POSTing this json: 
+to test just POST this json: 
 {
 	"query":"{findAllBooks  { id title isbn pageCount author{ id firstName lastName }}}"
 }
